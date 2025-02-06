@@ -15,7 +15,10 @@ public class RepeatCodeTest {
       new BigDecimal("20"), new BigDecimal("15"), new BigDecimal("18"),
       new BigDecimal("45"), new BigDecimal("12"));
 
-    final BigDecimal test = bigDecimals.stream().reduce(BigDecimal.ZERO, BigDecimal::add);
+    final BigDecimal test = bigDecimals.stream()
+      .filter(price -> price.compareTo(BigDecimal.valueOf(20)) > 0)
+      .map(price -> price.multiply(BigDecimal.valueOf(0.8)))
+      .reduce(BigDecimal.ZERO, BigDecimal::add);
 
     System.out.println(test);
   }
