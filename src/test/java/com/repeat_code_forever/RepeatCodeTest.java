@@ -3,13 +3,17 @@ package com.repeat_code_forever;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
+import java.util.Arrays;
 import java.util.List;
 
 public class RepeatCodeTest {
 
   @Test
   void repeatCode() {
-    final List<BigDecimal> bigDecimals = List.of(new BigDecimal("1.0"), new BigDecimal("1.0"), new BigDecimal("1.0"));
+    final List<BigDecimal> bigDecimals = Arrays.asList(
+      new BigDecimal("10"), new BigDecimal("30"), new BigDecimal("17"),
+      new BigDecimal("20"), new BigDecimal("15"), new BigDecimal("18"),
+      new BigDecimal("45"), new BigDecimal("12"));
 
     final BigDecimal test = bigDecimals.stream().reduce(BigDecimal.ZERO, BigDecimal::add);
 
