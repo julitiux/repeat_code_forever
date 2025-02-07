@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class RepeatCodeTest {
 
@@ -28,6 +29,14 @@ public class RepeatCodeTest {
   void testForEachConsumer() {
 
     final List<String> strings = List.of("Brian", "Nate", "Neal", "Raju", "Sara", "Scott");
+
+
+    strings.forEach(new Consumer<String>() {
+      @Override
+      public void accept(String s) {
+
+      }
+    });
 
   }
 
