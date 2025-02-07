@@ -23,4 +23,12 @@ public class RepeatCodeTest {
     System.out.println(test);
   }
 
+
+  @Test
+  void testForEachConsumer() {
+
+    final List<String> strings = List.of("Brian", "Nate", "Neal", "Raju", "Sara", "Scott");
+
+  }
+
 }
