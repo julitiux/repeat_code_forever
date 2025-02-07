@@ -24,12 +24,10 @@ public class RepeatCodeTest {
     System.out.println(test);
   }
 
-
   @Test
   void testForEachConsumer() {
 
     final List<String> strings = List.of("Brian", "Nate", "Neal", "Raju", "Sara", "Scott");
-
 
     strings.forEach(new Consumer<String>() {
       @Override
@@ -40,4 +38,12 @@ public class RepeatCodeTest {
 
   }
 
+  @Test
+  void testForEachWithLambdaAnonymous() {
+
+    final List<String> strings = List.of("Brian", "Nate", "Neal", "Raju", "Sara", "Scott");
+
+    strings.forEach((final String name) -> System.out.println(name));
+
+  }
 }
