@@ -33,8 +33,8 @@ public class RepeatCodeTest {
 
     strings.forEach(new Consumer<String>() {
       @Override
-      public void accept(String s) {
-
+      public void accept(String name) {
+        System.out.println(name);
       }
     });
 
