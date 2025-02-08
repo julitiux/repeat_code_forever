@@ -46,4 +46,13 @@ public class RepeatCodeTest {
     strings.forEach((final String name) -> System.out.println(name));
 
   }
+
+  @Test
+  void testInferTheType(){
+
+    final List<String> strings = List.of("Brian", "Nate", "Neal", "Raju", "Sara", "Scott");
+
+    strings.forEach((name) -> System.out.println(name));
+
+  }
 }
