@@ -20,7 +20,7 @@ public class LazyEvaluatorTest {
   }
 
   private Boolean firstMethod() {
-    return true;
+    return false;
   }
 
   private Boolean secondMethod() {
