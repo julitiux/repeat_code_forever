@@ -12,10 +12,8 @@ public class LazyEvaluatorTest {
     Supplier<Boolean> first = this::firstMethod;
     Supplier<Boolean> second = this::secondMethod;
 
-    System.out.println(
-      "\nfirst :: " + first.get() +
-      "\nsecond :: " + second.get()
-    );
+    if (first.get() || second.get())
+      System.out.println(" print message !!! ");
 
   }
 
