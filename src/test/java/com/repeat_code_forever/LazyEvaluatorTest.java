@@ -7,15 +7,23 @@ import java.util.function.Supplier;
 public class LazyEvaluatorTest {
 
   @Test
-  void testLazy(){
+  void testLazy() {
 
     Supplier<Boolean> first = this::firstMethod;
+    Supplier<Boolean> second = this::secondMethod;
 
-    System.out.println(first.get());
+    System.out.println(
+      "\nfirst :: " + first.get() +
+      "\nsecond :: " + second.get()
+    );
 
   }
 
-  private Boolean firstMethod(){
+  private Boolean firstMethod() {
+    return true;
+  }
+
+  private Boolean secondMethod() {
     return true;
   }
 }
