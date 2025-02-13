@@ -11,6 +11,8 @@ public class LazyEvaluatorTest {
 
     Supplier<Boolean> first = this::firstMethod;
 
+    System.out.println(first.get());
+
   }
 
   private Boolean firstMethod(){
