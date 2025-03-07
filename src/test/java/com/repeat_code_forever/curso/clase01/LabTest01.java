@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.function.BiFunction;
 import java.util.function.Consumer;
+import java.util.function.Function;
 import java.util.function.Supplier;
 
 public class LabTest01 {
@@ -18,5 +19,8 @@ public class LabTest01 {
 
     Supplier<Double> aleatorio = () -> Math.random();
     System.out.println(aleatorio.get());
+
+    Function<String, Integer> longitud = it -> it.length();
+    System.out.println(longitud.apply("Lambda"));
   }
 }
