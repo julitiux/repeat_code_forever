@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.function.BiFunction;
 import java.util.function.Consumer;
+import java.util.function.Supplier;
 
 public class LabTest01 {
 
@@ -14,5 +15,8 @@ public class LabTest01 {
 
     Consumer<String> imprimir = System.out::println;
     imprimir.accept("Hola Inmundo");
+
+    Supplier<Double> aleatorio = () -> Math.random();
+    System.out.println(aleatorio.get());
   }
 }
