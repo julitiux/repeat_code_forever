@@ -20,7 +20,7 @@ public class LabTest01 {
     Supplier<Double> aleatorio = () -> Math.random();
     System.out.println(aleatorio.get());
 
-    Function<String, Integer> longitud = it -> it.length();
+    Function<String, Integer> longitud = String::length;
     System.out.println(longitud.apply("Lambda"));
   }
 }
