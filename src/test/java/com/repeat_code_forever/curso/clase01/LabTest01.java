@@ -8,7 +8,7 @@ public class LabTest01 {
 
   @Test
   void lab01() {
-    BiFunction<Integer, Integer, Integer> suma = (a, b) -> a + b;
+    BiFunction<Integer, Integer, Integer> suma = Integer::sum;
     System.out.println(suma.apply(10, 2));
   }
 }
