@@ -14,3 +14,4 @@ public class LabTest04 {
     System.out.println(suma);
   }
 }
+
