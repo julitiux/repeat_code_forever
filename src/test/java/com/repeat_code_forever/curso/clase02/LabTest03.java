@@ -1,20 +1,21 @@
 package com.repeat_code_forever.curso.clase02;
 
-interface Operacion2 {
-  int ejecutar(int a, int b);
+interface CalculaOperacionBasica {
+  int operacion(int param1, int param2);
 }
 
 public class LabTest03 {
 
   public static void main(String[] args) {
-    Operacion2 suma = new Operacion2() {
+
+    CalculaOperacionBasica suma = new CalculaOperacionBasica(){
       @Override
-      public int ejecutar(int a, int b) {
-        return a + b;
+      public int operacion(int param1, int param2) {
+        return param1 + param2;
       }
     };
 
-    System.out.println(suma.ejecutar(5, 4));
+    System.out.println(suma.operacion(5, 4));
 
   }
 
