@@ -24,5 +24,14 @@ public class LabTest03 {
     };
     System.out.println(resta.operacion(10, 2));
 
+
+    CalculaOperacionBasica multitply = new CalculaOperacionBasica() {
+      @Override
+      public int operacion(int param1, int param2) {
+        return param1 * param2;
+      }
+    };
+    System.out.println(multitply.operacion(9, 9));
+
   }
 }
