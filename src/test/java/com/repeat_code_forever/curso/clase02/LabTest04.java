@@ -9,7 +9,7 @@ public class LabTest04 {
     List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5);
 
     int suma = numeros.stream()
-      .reduce(0, (num1, num2) -> num1 + num2);
+      .reduce(20, Integer::sum);
 
     System.out.println(suma);
   }
