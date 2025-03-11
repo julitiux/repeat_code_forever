@@ -1,4 +1,4 @@
-package com.repeat_code_forever.curso.clase01;
+package com.repeat_code_forever.curso.clase02;
 
 import org.junit.jupiter.api.Test;
 
