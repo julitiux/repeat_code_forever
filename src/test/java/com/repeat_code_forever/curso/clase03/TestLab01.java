@@ -11,7 +11,9 @@ public class TestLab01 {
   public static void main(String[] args) {
 
     Function<Integer, Integer> duplicate = x -> x * 2;
+    Function<Integer, Integer> divide = x -> x / 2;
 
     System.out.println(operator(10, duplicate));
+    System.out.println(operator(20, divide));
   }
 }
